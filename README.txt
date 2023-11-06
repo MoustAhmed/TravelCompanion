@@ -18,6 +18,7 @@ Axios: HTTP client for making API requests to fetch data.
 Travel Advisor API: The source of detailed information about local places.
 
 
+
 Project Status
 
 The project is currently on hold due to API call limits.
