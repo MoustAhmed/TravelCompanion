@@ -11,6 +11,7 @@ React.js: A powerful JavaScript library for building interactive user interfaces
 TypeScript: A statically typed superset of JavaScript that enhances code quality and developer productivity.
 Material-UI: A React UI framework that provides pre-designed components and styles for a polished user interface.
 Google Maps API: Integrating Google Maps for visually displaying location data.
+
  - Backend:
 
 Node.js: A JavaScript runtime environment for server-side development.
