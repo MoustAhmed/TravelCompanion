@@ -6,10 +6,10 @@ import PlaceDetails from '../PlaceDetails/PlaceDetials'
 import useStyles from './styles';
 import { PlaceOutlined } from '@material-ui/icons';
 
-const List = ({places}) => {
+    const List = ({ places, type, setType, rating, setRating  }) => {
     const classes = useStyles();
-    const [type, setType] = useState('restaurants');
-    const [rating, setRating] = useState('');
+    
+   
 
 
     return(
@@ -19,9 +19,9 @@ const List = ({places}) => {
             <FormControl className={classes.formControl}>
                 <inputType>Type</inputType>
                 <Select value={type} onChange={(e) => setType(e.target.value)} >
-                    <MenuItem value = "Restaurants">restaurants</MenuItem>
-                    <MenuItem value = "Hotels">Hotels</MenuItem>
-                    <MenuItem value = "Attractions">Attractions</MenuItem>
+                    <MenuItem value = "restaurants">Restaurants</MenuItem>
+                    <MenuItem value = "hotels">Hotels</MenuItem>
+                    <MenuItem value = "attractions">Attractions</MenuItem>
 
                 </Select>
             </FormControl>

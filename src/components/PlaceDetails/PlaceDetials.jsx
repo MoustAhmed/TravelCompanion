@@ -17,12 +17,15 @@ const PlaceDetails = ({place}) =>{
                 title={place.name}
             />
         <CardContent>
-
+        
             <Typography gutterBottom variant = "h5">{place.name}</Typography>
-
+            <Box display = "flex" justifyContent="space-between">
+                <Rating value={Number(place.rating)} readOnly/>
+                <Typography gutterBottom variant = "subtitle1">Out of {place.num_reviews} reviews</Typography>
+            </Box>
             <Box display = "flex" justifyContent="space-between">
                 <Typography variant = "subtitle1">Price</Typography>
-                <Typography gutterBottom variant = "subtitle1">{place.price_level}</Typography>
+                <Typography gutterBottom variant = "subtitle1">{place.price}</Typography>
             </Box>
 
             <Box display = "flex" justifyContent="space-between">
@@ -30,16 +33,6 @@ const PlaceDetails = ({place}) =>{
                 <Typography gutterBottom variant = "subtitle1">{place.ranking}</Typography>
             </Box>
             
-            {/* {place?.awards?.map(( {award} ) => (
-                <Box display = "flex" justifyContent= "space-between" alignItems="center">
-                    <img src = {award.images.small} alt={ award.display_name}/>
-
-                    <Typography variant='subtitle2' color ="textSecondary">{award.display_name}</Typography>
-                </Box>
-            ))} */}
-
-           
-
             {place?.cuisine?.map(( {name} ) => (
         
                 <Chip key ={name} size = "small" label = {name} className = {classes.chip}/>
