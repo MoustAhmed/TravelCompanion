@@ -4,16 +4,10 @@ Travel Companion utilizes the Travel Advisor API to fetch detailed information a
 
 Technologies Used
  - Frontend:
+React.js, A powerful JSX (JavaScript XML), Material-UI, Google Maps API: 
 
-React.js: A powerful JavaScript library for building interactive user interfaces.
-JSX (JavaScript XML): JavaScript extension for React, simplifying UI creation with HTML-like syntax inside JavaScript.
-Material-UI: A React UI framework that provides pre-designed components and styles for a polished user interface.
-Google Maps API: Integrating Google Maps for visually displaying location data.
- - Backend:
-
-Node.js: A JavaScript runtime environment for server-side development.
-Axios: HTTP client for making API requests to fetch data.
-Travel Advisor API: The source of detailed information about local places.
+ - Backend
+Node.js, Axios, Travel Advisor API
 
 
 ![Screenshot 2023-11-08 025219](https://github.com/MoustAhmed/TravelCompanion/assets/121663630/10e08648-8bda-4e32-9db0-bbf84697063c)
